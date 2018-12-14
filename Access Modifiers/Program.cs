@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace Access_Modifiers
 {
+
     class Program
     {
+
         static void Main(string[] args)
         {
+            var Customer = new Customer();
+            var GoldCustomer = new GoldCustomer();
+            var RateCustomer = new RateCalculator();
+
+            Console.WriteLine("Application START!");
+            Customer.Promote();
+            GoldCustomer.OfferVouchar();
+            RateCustomer.Calculate(Customer);
+            Console.ReadLine();
         }
+
+        
     }
 }
