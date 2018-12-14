@@ -14,12 +14,12 @@ namespace Access_Modifiers
         {
             var Customer = new Customer();
             var GoldCustomer = new GoldCustomer();
-            var RateCustomer = new RateCalculator();
+            var RateCalculator = new RateCalculator();
 
             Console.WriteLine("Application START!");
             Customer.Promote();
             GoldCustomer.OfferVouchar();
-            RateCustomer.Calculate(Customer);
+            RateCalculator.Calculate(Customer);
             Console.ReadLine();
         }
 
